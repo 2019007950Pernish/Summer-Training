@@ -1,0 +1,43 @@
+
+#include<stdio.h>
+int main()
+{
+   int marks;
+   // accept input from the user
+   printf("\nEnter the Marks Between 0 To 50:");
+   scanf("%d", &marks);
+   
+   if(marks>50)
+   {
+    //If user enters marks greater than 50
+    printf("\nPlease Enter marks between 0 to 50\n");
+   }
+   else
+   {
+   switch(marks/5)
+   {
+       case 10 :
+       case 9 :
+           //Marks between 40-50
+           printf("\n Your Grade is: A");
+           break;
+       case 8 :
+            // Marks between 31-39
+           printf("\n Your Grade is: B" );
+           break;
+       case 7 :
+           // Marks between 21-30
+           printf("\n Your Grade is: C" );
+           break;
+       case 6 :
+           // Marks between 11-20
+           printf("\n Your Grade is: D" );
+           break;
+      
+       default :
+           // Marks between 0-19
+           printf("\n You Grade is: F & you're Failed\n");
+   }
+ }
+   return 0;
+}
