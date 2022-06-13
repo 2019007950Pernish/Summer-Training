@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main(){
+
+    char str[100];
+
+    printf("Enter a String : ");
+    scanf("%s",str);
+
+    //Declaring maximum and minimu charactter
+    char max = 'A';
+    char min = 'z';
+    int i;
+
+    for(i=0;i<strlen(str);i++) {
+		
+        //Checking minimum character
+        if(str[i] < min) {
+            min = str[i];
+        }
+		
+        //Checking maximum character
+        if(str[i] > max) {
+            max = str[i];
+        }
+    }
+    printf("Max : %c", max);
+    printf("\nMin : %c", min);
+
+    return 0;
+}
